@@ -1,0 +1,6 @@
+<h1><%= 'New Page'[:new_page] %></h1>
+
+<% form_for :page, :url => pages_path, :html => {:id => 'page_form'} do |f| -%>
+<%= render :partial => "form", :object => f %>
+<%= submit_tag 'Create Page'[:create_page], :or => link_to('Cancel'[:cancel], pages_path) %>
+<% end -%>

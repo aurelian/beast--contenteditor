@@ -1,0 +1,13 @@
+<%= error_messages_for :pages -%>
+
+<p>
+	<label for="page_title">Title:</label>
+	<%= form.text_field "title" -%><br />  
+  
+  <label for="page_body">Content:</label><br />
+	<%= form.text_area "body", {:style=>'width:750px;height:330px', :rows=>40,:cols=>20} -%><br />
+  
+	<label for="page_permalink">Permalink:</label>
+	<%= form.text_field "permalink" -%><br />  
+  
+</p>

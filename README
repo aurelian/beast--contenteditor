@@ -1,0 +1,50 @@
+Pages
+=====
+
+== About
+
+  ContentEditor is a MiniCMS like for Altered Beast (could work with Beast too).
+  It allows creation of simple content pages.
+
+== Install
+
+1. script/runner 'Beast::Plugins::ContentEditor.install'
+
+2. install Rails Plugin beast_plugins:
+
+  script/plugin http://svn.techno-weenie.net/projects/beast/plugins/beast_plugins/
+
+3. skip to 4 if you have config/initializers/plugins.rb
+
+  3.1. create config/initializers/plugins.rb
+
+  3.2. add:
+
+    Beast::Plugin.initialize_plugins 'Beast::Plugins::ContentEditor'
+
+  3.3 [esc]:wq!
+
+  3.4. done.
+
+4. append:
+
+    'Beast::Plugins::ContentEditor'
+
+   to the list of plugins 
+
+   done.
+
+== Contact
+
+Aurelian Oancea, aurelian at locknet dot ro
+
+== Copyright
+
+2008, Aurelian Oancea under the terms of MIT-LICENCE
+
+== TODO
+
+* redirect to ...something when the page is not there
+* use control.textarea (http://livepipe.net/projects/control_textarea/) for page editing
+* use Permalink_Fu bundled with Beast if we get around plugin load order
+
